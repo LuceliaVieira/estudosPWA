@@ -1,0 +1,9 @@
+.size-img{
+  display: flex;
+  justify-content: center;
+}
+
+.mat-card-image{
+  margin: 0 !important;
+  width: 200px !important;
+}

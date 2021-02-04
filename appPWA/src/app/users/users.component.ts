@@ -9,13 +9,11 @@ import { ReqresServiceService } from '../service/reqresService.service'
 })
 export class UsersComponent implements OnInit {
 
-  title = "AAAAAAAAAAAAAA";
   user: any;
 
   constructor(private service: ReqresServiceService) { }
 
   ngOnInit() {
-    console.log("AAAAAAAAA");
     this.listUser();
   }
 
@@ -23,6 +21,5 @@ export class UsersComponent implements OnInit {
     this.service.list()
     .subscribe(data => this.user = data);
   }
-
 
 }

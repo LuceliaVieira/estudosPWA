@@ -23,3 +23,12 @@ describe('UsersComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+/*
+
+  Suites -> escopo de teste
+
+  jasmine suites = describe
+
+  describe possui dois parametros ("nome do describe", function())
+*/

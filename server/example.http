@@ -1,0 +1,16 @@
+  //http://localhost:3000/data
+
+
+  ###
+
+  POST http://localhost:3000/data  HTTP/1.1
+  content-type: application/json
+
+  {
+    "email": "lucelia.vieira@compasso.com.br",
+    "first_name": "Lucélia",
+    "last_name" : "Vieira",
+    "avatar": "https://via.placeholder.com/150"
+  }
+
+  //json-server --watch db.json

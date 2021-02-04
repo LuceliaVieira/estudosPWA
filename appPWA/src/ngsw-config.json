@@ -12,7 +12,8 @@
           "/*.js"
         ]
       }
-    }, {
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -21,6 +22,20 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "person-api",
+      "urls": [
+        "http://localhost:3000/data"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 10000,
+        "maxAge": "10h",
+        "timeout": "5s"
       }
     }
   ]

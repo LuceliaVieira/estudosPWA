@@ -8,13 +8,27 @@ import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
 
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatCardModule } from '@angular/material';
-import { UsersComponent } from './users/users.component'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon'
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatCardModule } from '@angular/material/card'
+import { MatGridListModule } from '@angular/material/grid-list'
+import { MatFormFieldModule } from '@angular/material/form-field'
+
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+
+import { UsersComponent } from './users/users.component';
+import { UsersAddComponent } from './users/users-add/users-add.component';
+import { CalculatorComponent } from './calculator/calculator.component'
+import { CacheComponent } from './cache/cache.component'
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    UsersAddComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +39,15 @@ import { UsersComponent } from './users/users.component'
     MatSidenavModule,
     HttpClientModule,
     MatCardModule,
+    MatGridListModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [
+    CacheComponent
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

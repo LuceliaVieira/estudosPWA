@@ -1,0 +1,16 @@
+- mat-icon oi html ou module ou teste
+- validar envio de dados quando o app estiver off
+- resolver component de cache (não está sendo reconhecido dentro do serviço) - alterar lógica
+
+- Separar suites calculadora
+- criar suites para requisições
+- testar as requisições
+
+- push notification
+
+
+BUGS:
+
+- Offline não pega a lista de pessoas do service work
+
+- Verificar sinais da calculadora

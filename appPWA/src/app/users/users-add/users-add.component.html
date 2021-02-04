@@ -1,0 +1,28 @@
+
+<form [formGroup]="form">
+  <label>E-mail</label>
+  <input
+    type="text"
+    name="email"
+    id="email"
+    formControlName="email">
+
+  <label>First Name</label>
+  <input
+    type="text"
+    name="first-name"
+    id="first-name"
+    formControlName="first_name">
+
+  <label>Last Name</label>
+  <input
+    type="text"
+    name="last-name"
+    id="first-name"
+    formControlName="last_name">
+
+  <button (click)="onSubmit()">Add</button>
+  <button (click)="onCancel()">Cancel</button>
+
+</form>
+

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: "https://reqres.in/api/users"
+  API: "http://localhost:3000/data"
 };
 
 /*
